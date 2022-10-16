@@ -1,0 +1,19 @@
+{
+  "name": "guitar_store_api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "netlify": "netlify dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "airtable-node": "^0.1.20",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "netlify-cli": "^11.8.2"
+  }
+}
