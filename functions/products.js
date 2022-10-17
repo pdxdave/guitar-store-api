@@ -10,9 +10,9 @@ const airtable = new Airtable({ apiKey: process.env.AIRTABLE_API_KEY })
         const {records} = await airtable.list()
         const products = records.map((product) => {
             const {id} = product 
-            const {name, brand, type, price, rating, description, features, stock, images} = product.fields
+            const {name, brand, type, price, stars, description, features, stock, images, reviews} = product.fields
             const url = images[0].url 
-            return {url, id, name, brand, type, price, rating, description, features, stock, images}
+            return {url, id, name, brand, type, price, stars, description, features, stock, images, reviews}
         })
         return {
             headers: {
